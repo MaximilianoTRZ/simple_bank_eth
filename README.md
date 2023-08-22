@@ -10,7 +10,7 @@ El caso de uso del contrato Simple Bank es el siguiente:
 - Los usuarios pueden verificar su saldo de cuenta en cualquier momento.
 - Los usuarios pueden retirar parte o la totalidad del saldo en su cuenta, siempre y cuando haya un saldo disponible para ello.
 
-## Contract SimpleBank
+## Contract SimpleBank UML
 
 ![Contract SimpleBank](simpleBankUML.png)
 
