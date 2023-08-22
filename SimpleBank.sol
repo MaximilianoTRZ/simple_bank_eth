@@ -102,7 +102,7 @@ contract SimpleBank {
     function withdraw(uint withdrawAmount) public returns (uint) {
         require(enrolled[msg.sender] , "User not enrolled");
         // ...
-        require(balances[msg.sender] >= withdrawAmount, "Insufficient user balance");
+        require(balances[msg.sender] >= withdrawAmount, "Insufficient user funds");
         balances[msg.sender] -= withdrawAmount;
 
         (bool success, ) = msg.sender.call{value: withdrawAmount}("");
