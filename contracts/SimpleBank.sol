@@ -51,12 +51,12 @@ contract SimpleBank {
     // Modifiers
     //
     modifier erolledUser {
-        require(users[msg.sender].enrolled, "User not enrolled v222222");
+        require(users[msg.sender].enrolled, "User not enrolled");
         _; 
     }
 
     modifier greaterThanZeroAmount (uint256 _amount) {
-        require(_amount > 0, "The amount must be greater than v222222");
+        require(_amount > 0, "The amount must be greater than");
         _;
     }
 
@@ -90,7 +90,7 @@ contract SimpleBank {
     /// @return El estado de inscripción del usuario
     // Emite el evento apropiado
     function enroll() public returns (bool) {
-        require(!users[msg.sender].enrolled, "User already enrolled v222222");
+        require(!users[msg.sender].enrolled, "User already enrolled");
         // ...
         users[msg.sender] = User({
             userId: msg.sender,
