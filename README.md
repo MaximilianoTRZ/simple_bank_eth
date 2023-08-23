@@ -1,6 +1,6 @@
 # Ejercicio de Simple Bank
 
-En este ejercicio, vas a implementar el contrato SimpleBank.sol. ¡El banco debería ser capaz de inscribir nuevos usuarios y permitirles hacer depósitos y retiros! El contrato contiene la estructura y los comentarios para implementar el contrato. Sigue los comentarios indicados para implementarlo.
+Implementación del contrato SimpleBank.sol. ¡El banco es capaz de inscribir nuevos usuarios y permite hacer depósitos y retiros!
 
 El caso de uso del contrato Simple Bank es el siguiente:
 
