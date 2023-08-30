@@ -1,4 +1,4 @@
-#Simple Bank Project
+# Simple Bank Project
 
 # How to run this project and deploy to Sepolia
 
