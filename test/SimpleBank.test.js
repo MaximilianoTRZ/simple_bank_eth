@@ -2,7 +2,7 @@ const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
 describe("SimpleBank", function () {
-  let SimpleBank, simpleBank, owner, user1, user2, contract;
+  let SimpleBank, simpleBank, owner, user1, user2;
 
   beforeEach(async function () {
     [owner, user1, user2] = await ethers.getSigners();
@@ -14,6 +14,11 @@ describe("SimpleBank", function () {
   it("should enroll a user", async function () {
     await simpleBank.connect(user1).enroll();
     expect(await simpleBank.enrolled(user1.address)).to.equal(true);
+  });
+
+  it("should check that a user is not enrolled", async function () {
+    await simpleBank.connect(user1).enroll();
+    expect(await simpleBank.enrolled(user2.address)).to.equal(false);
   });
 
   it("should deposit and update balance correctly", async function () {

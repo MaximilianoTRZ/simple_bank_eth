@@ -1,3 +1,25 @@
+#Simple Bank Project
+
+# How to run this project and deploy to Sepolia
+
+## install dependencies
+
+`npm i`
+
+## run tests
+
+`npx hardhat test`
+
+## deploy to Sepolia
+
+`npx hardhat run scripts/deploy.js --network sepolia`
+
+## Verify contract
+
+`npx hardhat verify --network sepolia <contract address>`
+
+---
+
 # Ejercicio de Simple Bank
 
 En este ejercicio, vas a implementar el contrato SimpleBank.sol. ¡El banco debería ser capaz de inscribir nuevos usuarios y permitirles hacer depósitos y retiros! El contrato contiene la estructura y los comentarios para implementar el contrato. Sigue los comentarios indicados para implementarlo.
@@ -10,10 +32,6 @@ El caso de uso del contrato Simple Bank es el siguiente:
 - Los usuarios pueden verificar su saldo de cuenta en cualquier momento.
 - Los usuarios pueden retirar parte o la totalidad del saldo en su cuenta, siempre y cuando haya un saldo disponible para ello.
 
-## Contract SimpleBank UML
-
-![Contract SimpleBank](simpleBankUML.png)
-
 ## Requisitos
 
 1. Crea un nuevo proyecto de _Hardhat_, agrega el contrato proporcionado.
@@ -22,11 +40,6 @@ El caso de uso del contrato Simple Bank es el siguiente:
 ### Puntos adicionales
 
 Además de las características requeridas, siéntete libre de agregar funciones adicionales para destacar tu código entre los demás.
-
-### Cómo enviar mi respuesta
-
-1. No recomendamos que subas tu solución a un repositorio público de Github, ya que otras personas podrían copiar tu solución.
-2. Debes proporcionarnos un archivo ZIP con el proyecto de Hardhat (sin node_modules ni ninguna otra dependencia instalada).
 
 ### ¿Cuánto tiempo tengo para terminar?
 
