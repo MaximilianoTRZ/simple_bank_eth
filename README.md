@@ -37,14 +37,6 @@ El caso de uso del contrato Simple Bank es el siguiente:
 1. Crea un nuevo proyecto de _Hardhat_, agrega el contrato proporcionado.
 2. Implementa todas las funciones, eventos y cualquier cosa mencionada en los comentarios del código en el contrato.
 
-### Puntos adicionales
-
-Además de las características requeridas, siéntete libre de agregar funciones adicionales para destacar tu código entre los demás.
-
-### ¿Cuánto tiempo tengo para terminar?
-
-Tómate tu tiempo dentro del plazo que te proporcionemos. Valoramos un código de alta calidad (nombres de variables, comentarios si es necesario, pruebas) en lugar de un código rápido.
-
 ### Bonus: 1 Modificador
 
 1. Crea un `modifier()` que valide en las funciones `deposit()` y `withdraw()` que quien llame a la función sea un usuario inscrito.
